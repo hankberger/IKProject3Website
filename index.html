@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCI 5611 | Project 1</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/xcp8pap.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oku3xak.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>csci 5611: project 1</h1>
+            <h3>By: Hank Berger (berg2807), Daniel Chang (chan1975)</h3>
+        </div>
+        <div class="background">
+            <div class="content">
+               <h1>Navigation Simulation</h1>
+               <h3>3D rendering path planning using ThreeJS.</h3>
+               <div class="buttonbox">
+                    <a href='https://hankberger.github.io/PathPlanningThreeJS/' target='_blank'>
+                        <button class="b1">
+                            View the Live Project
+                        </button>
+                    </a> 
+                    <a href="https://github.com/hankberger/PathPlanningThreeJS" target='_blank'>
+                        <button class="b2">
+                            View Code
+                        </button>
+                    </a>
+               </div>
+               <div class="videodiv">
+                    <h1>Video Demonstration</h1>
+                    <video controls>
+                        <source src="public/final_video.mp4" type="video/mp4">
+                        Your browser does not support video.
+                    </video>
+               </div>
+               <div class='features'>
+                    <h1>Features</h1>
+                    <div class='featuresflex'>
+                        <div class="card">
+                            <img class="headerimg" src="public/cubeaa.png"></img>
+                            <h2>3D Rendering & Camera</h2>
+                            <p>Navigation simulation rendered in 3D using ThreeJS and TypeScript. Orbital camera that focuses around the navigation agent.</p>
+                        </div>
+                        <div class="card">
+                            <img class="headerimg" src="public/dumy.png"></img>
+                            <h2>Improved Agent & Scene</h2>
+                            <p>Agent rendered with a crash dummy model. Collision Objects rendred as explosive barrels. Rigged and animated using Adobe Mixamo. All models free for project use under CC0 License.</p>
+                        </div>
+                        <div class="card">
+                            <img class="headerimg" src="public/ROTATE.png"></img>
+                            <h2>Orientation Smoothing</h2>
+                            <p>Rotation smoothing using vector math. Model walks facing the correct direction, and rotates smoothly between angles instead of snapping.</p>
+                        </div>
+                    </div>
+               </div>
+               <div class="videodiv">
+                <h1>Technologies Used</h1>
+                <div class = 'logodiv'>
+                    <img src="public/tslogo.png">
+                    <img src="public/threepng.png">
+                    <img src="public/vitepng.png">
+                    <img src="public/githubpng.png">
+                    
+                </div>
+                <h3>TypeScript &nbsp;&nbsp;&nbsp;&nbsp; ThreeJS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vite &nbsp;&nbsp;&nbsp;&nbsp;  Github Pages</h3>
+                
+                </div>
+                <div class="videodiv">
+                    <h1>Challenges We Encountered</h1>
+                    <div class = 'challenge'>
+                        <h3>One of the most difficult aspects of this project was implementing the pathing algorithms. We had a encountered a lot of bugs trying to move our Processing code over to TypeScript, so we took a step back and started writing the functions one by one. We also visualized the graph using ThreeJS objects, which really helped us understand what was going wrong with our algorithms and make the fixes that we needed to.</h3>
+                        <br/>
+                        <h3>Another challenge we faced was importing the animated model into the simulation. Rigging and animating was done very easily using Adobe's Mixamo, but we faced some trouble getting the model imported using ThreeJS.</h3>
+                    </div>
+                    
+                    </div>
+
+                    <div class="artdiv">
+                        <h1>Art Contest</h1>
+                            <img class="art" src="public/art1.png">
+                            
+                    </div>
+                    
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
