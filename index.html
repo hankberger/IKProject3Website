@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSCI 5611 | Project 1</title>
+    <title>CSCI 5611 | Project 3</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://use.typekit.net/xcp8pap.css">
     <link rel="stylesheet" href="https://use.typekit.net/oku3xak.css">
@@ -12,20 +12,20 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>csci 5611: project 1</h1>
-            <h3>By: Hank Berger (berg2807), Daniel Chang (chan1975)</h3>
+            <h1>csci 5611: project 3</h1>
+            <h3>By: Hank Berger (berg2807)</h3>
         </div>
         <div class="background">
             <div class="content">
-               <h1>Navigation Simulation</h1>
-               <h3>3D rendering path planning using ThreeJS.</h3>
+               <h1>Inverse Kinematics</h1>
+               <h3>Man climbing a rock, rendered in ThreeJS.</h3>
                <div class="buttonbox">
                     <a href='https://hankberger.github.io/PathPlanningThreeJS/' target='_blank'>
                         <button class="b1">
                             View the Live Project
                         </button>
                     </a> 
-                    <a href="https://github.com/hankberger/PathPlanningThreeJS" target='_blank'>
+                    <a href="https://github.com/hankberger/CSCI5611_Project3" target='_blank'>
                         <button class="b2">
                             View Code
                         </button>
@@ -34,7 +34,7 @@
                <div class="videodiv">
                     <h1>Video Demonstration</h1>
                     <video controls>
-                        <source src="public/final_video.mp4" type="video/mp4">
+                        <source src="public/climber.mp4" type="video/mp4">
                         Your browser does not support video.
                     </video>
                </div>
@@ -42,19 +42,29 @@
                     <h1>Features</h1>
                     <div class='featuresflex'>
                         <div class="card">
-                            <img class="headerimg" src="public/cubeaa.png"></img>
-                            <h2>3D Rendering & Camera</h2>
-                            <p>Navigation simulation rendered in 3D using ThreeJS and TypeScript. Orbital camera that focuses around the navigation agent.</p>
+                     
+                            <h2>Single Arm IK</h2>
+                            <p>A single arm with a body in the middle to give the illusion of him having 2 arms. 7 links in total.</p>
                         </div>
                         <div class="card">
-                            <img class="headerimg" src="public/dumy.png"></img>
-                            <h2>Improved Agent & Scene</h2>
-                            <p>Agent rendered with a crash dummy model. Collision Objects rendred as explosive barrels. Rigged and animated using Adobe Mixamo. All models free for project use under CC0 License.</p>
+                   
+                            <h2>Joint Limits</h2>
+                            <p>Realistic joint limits to give the sense of plausible movment. Toggle button to turn this feature off. [switched off at 0:16]</p>
                         </div>
                         <div class="card">
-                            <img class="headerimg" src="public/ROTATE.png"></img>
-                            <h2>Orientation Smoothing</h2>
-                            <p>Rotation smoothing using vector math. Model walks facing the correct direction, and rotates smoothly between angles instead of snapping.</p>
+                          
+                            <h2>User Interaction</h2>
+                            <p>The goal follows wherever the user is pointing with a mouse. There are also discrete things you can toggle using the UI.</p>
+                        </div>
+                        <div class="card">
+                          
+                            <h2>3D Rendering</h2>
+                            <p>3D Character, camera, and controls using Three.js. Creative common textures on a plane to give the illusion of a cliff side.</p>
+                        </div>
+                        <div class="card">
+                         
+                            <h2>Alternative IK Solver</h2>
+                            <p>Ability to switch the solver in real-time using the UI provided.</p>
                         </div>
                     </div>
                </div>
@@ -71,18 +81,28 @@
                 
                 </div>
                 <div class="videodiv">
-                    <h1>Challenges We Encountered</h1>
+                    <h1>Challenges I Encountered</h1>
                     <div class = 'challenge'>
-                        <h3>One of the most difficult aspects of this project was implementing the pathing algorithms. We had a encountered a lot of bugs trying to move our Processing code over to TypeScript, so we took a step back and started writing the functions one by one. We also visualized the graph using ThreeJS objects, which really helped us understand what was going wrong with our algorithms and make the fixes that we needed to.</h3>
+                        <h3>Just like the last project, I scrapped my first implementation and started over. While it made me a little short on time, it was very helpful in the long run to get good inverse kinematics working.</h3>
                         <br/>
-                        <h3>Another challenge we faced was importing the animated model into the simulation. Rigging and animating was done very easily using Adobe's Mixamo, but we faced some trouble getting the model imported using ThreeJS.</h3>
+                        <h3>I had a lot of trouble finishing an alternative method. I used CCD as my primary method, and implemented some sort of basic random search (I think..?). This is discussed more in the next section. </h3>
                     </div>
                     
                     </div>
 
+                    <div class="videodiv">
+                        <h1>CCD vs. Cursed Random Search</h1>
+                        <div class = 'challenge'>
+                            <h3>I call my alternative method 'Cursed Random Search' because it's super broken and did not go well. I was a bit short on time, so I tried my best in implementing another method but ultimately failed.</h3>
+                            <br/>
+                            <h3>I did not have too much trouble implementing CCD, though. I ran into a road block initaially on my first implementation, but after scrapping it and applying everything I had learned from it, implemeing CCD went very smooth the next time.</h3>
+                        </div>
+                        
+                        </div>
+
                     <div class="artdiv">
                         <h1>Art Contest</h1>
-                            <img class="art" src="public/art1.png">
+                            <img class="art" src="public/cliffside.jpg">
                             
                     </div>
                     
